@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "importHelpers": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "target": "es2015",
+    "moduleResolution": "node",
+    "lib": ["es5", "es6", "es2017", "dom", "dom.iterable"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "allowJs": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+  },
+  "lib": ["es2015"],
+  "include": [
+    "new-types.d.ts",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

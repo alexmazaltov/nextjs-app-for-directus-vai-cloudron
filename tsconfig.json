@@ -6,7 +6,13 @@
     "esModuleInterop": true,
     "target": "es2015",
     "moduleResolution": "node",
-    "lib": ["es5", "es6", "es2017", "dom", "dom.iterable"],
+    "lib": [
+      "es5",
+      "es6",
+      "es2017",
+      "dom",
+      "dom.iterable"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "sourceMap": true,
@@ -16,15 +22,27 @@
     "strict": false,
     "noEmit": true,
     "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
   },
-  "lib": ["es2015"],
+  "lib": [
+    "es2015"
+  ],
   "include": [
     "new-types.d.ts",
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "**/*.js"
+    "**/*.js",
+    "pages/buy-recipes.js"
   ],
   "exclude": [
     "node_modules"

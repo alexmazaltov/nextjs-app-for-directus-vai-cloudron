@@ -25,11 +25,19 @@ export const metadata = {
     title: "NGI | New Generation Institutes",
     description: "Invest in Auction. Get more money from your traffic.",
   },
+  // Additional properties for icons and manifest
+  icons: {
+    appleTouchIcon: "/apple-touch-icon.png",
+    favicon32: "/favicon-32x32.png",
+    favicon16: "/favicon-16x16.png",
+    manifest: "/site.webmanifest",
+  },
 };
 
 export default function RootLayout({ children }) {
  return (
     <html lang="en">
+
       <body>{children}</body>
     </html>
   )

@@ -51,6 +51,9 @@ $ cd nodejs-app
 # build the app
 $ docker build -t username/nodejs-app:1.0.0 .
 
+# login to docker registry
+$ docker login
+
 # push the image. if the push fails, you have to 'docker login' with your username
 $ docker push username/nodejs-app:1.0.0
 ```

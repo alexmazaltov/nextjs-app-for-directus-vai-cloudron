@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const metadata = {
   metadataBase: new URL("https://app.cloud.alefinvest.xyz"),
   title: 'NGI | New Generation Institutes',
@@ -37,8 +39,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
  return (
     <html lang="en">
-
-      <body>{children}</body>
+      <body>
+        {/* <nav>
+          <center>
+            <Link href="/">Home</Link>{' | '}
+            <Link href="/about">About</Link>{' | '}
+            <Link href="/conduct">Code of Conduct</Link>{' | '}
+            <Link href="/privacy">Privacy Policy</Link>{' | '}
+            <Link href="/blog">Blog</Link>
+          </center>
+				</nav> */}
+        <main>{children}</main>
+      </body>
     </html>
   )
 }
